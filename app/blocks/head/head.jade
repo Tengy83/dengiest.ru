@@ -1,0 +1,17 @@
+head
+	meta(charset='utf-8')
+	meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+
+	link(href='/favicon-credit-16.ico'   rel='icon' type='image/x-icon')
+	link(href='/favicon-credit-16.ico'   rel='shortcut icon' type='image/x-icon')
+
+	link(rel='manifest' href='/manifest.json')
+
+	//- http://realfavicongenerator.net/faq#why_ico_not_declared
+
+	block head
+	title= pageTitle || ''
+	meta(name='description' content=pageDescription || '')
+	meta(name='keywords' content=pageKeywords || '')
+
+	link(href='/assets/styles/app.min.css' rel='stylesheet')
